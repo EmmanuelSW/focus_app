@@ -11,12 +11,13 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
-//= require turbolinks
 //= require semantic-ui
+//= require turbolinks
 //= require_tree .
 
-$(document).ready(function(){
+$(document).on('turbolinks:load', function(event) {
   $(".cube").click(function(){
     $(this).shape('flip back');
   });
