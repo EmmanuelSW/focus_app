@@ -2,8 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .super-container {
+  flex: 1;
   padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 body {
@@ -27,16 +38,6 @@ hr {
   border-top: 2px solid #A333C8;
 }
 
-@media (min-height: 320px) {
-  .ui.footer.form-page {
-    position: absolute;
-    bottom: 0;
-  }
-}
-
-.floated.header {
-  margin-bottom: 2px !important;
-}
 
 .actions {
   width: 220px !important;
