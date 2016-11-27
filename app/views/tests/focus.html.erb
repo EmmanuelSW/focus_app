@@ -1,0 +1,29 @@
+<h1>LEY DE MENSAJERÍA EN COLOMBIA - REGIMEN DE TARIFAS</h1>
+
+<hr>
+<br>
+
+<div class="three column doubling stackable ui grid">
+  <% @tests.each do |test| %>
+    <div class="column">
+      <div class="ui cube shape" style="width:100% !important;">
+        <div class="sides">
+          <div class="side active">
+            <div class="content">
+              <div class="center">
+                <%= sanitize test.question %>
+              </div>
+            </div>
+          </div>
+          <div class="side">
+            <div class="content">
+              <div class="center">
+                <%= sanitize test.answer %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

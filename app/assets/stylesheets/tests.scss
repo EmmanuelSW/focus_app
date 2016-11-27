@@ -1,0 +1,57 @@
+// Place all the styles related to the Tests controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.super-container {
+  padding-top: 20px;
+}
+
+body {
+  font-family: "Comic Sans", "Lato", "Helvetica", "Arial" sans-serif;
+}
+
+.left-float {
+  float: left;
+}
+
+.shape:hover {
+  cursor: pointer;
+}
+
+.cube {
+  width: 357px !important;
+  line-height: 28px;
+}
+
+hr {
+  border-top: 2px solid #A333C8;
+}
+
+@media (min-height: 320px) {
+  .ui.footer.form-page {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.floated.header {
+  margin-bottom: 2px !important;
+}
+
+.sides:nth-of-type(odd) {
+  background-color: purple;
+}
+
+.center {
+  width: 301px !important;
+}
+
+@media (max-width: 1200px) {
+  .cube {
+    width: 300px !important;
+    line-height: 28px;
+  }
+  .center {
+    width: 244px !important;
+  }
+}
